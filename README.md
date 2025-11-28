@@ -8,7 +8,7 @@ It is a small script that logs in to my router and recovers the number of device
 ## How to run the script
 
 - clone this repo.
-- run `npm init` in the cloned repo directory.
+- run `npm install` in the cloned repo directory.
 - duplicate the file `.env.example` and rename it to `.env`, then fill the `ROUTER_URL`, `ROUTER_USERNAME` and `ROUTER_PASSWORD`.
 - change the variables `deviceType` and  `filters` in the file `./tests/get-device-by-filters.spec.ts` accordingly.
 - run the test file using `npx playwright test` or using the VSCode extension if installed
