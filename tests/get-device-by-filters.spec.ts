@@ -69,7 +69,7 @@ test.describe('Get device by filters', () => {
 
     const deviceList = iframeDevices.locator('.DevTableList');
     await expect(deviceList).toHaveCount(numDevices);
-    console.log(`Searching for ${deviceType} device with the filters: ${filters}`);
+    console.log(`Searching for ${deviceType} device with the filters: ${JSON.stringify(filters)}`);
     const device = deviceList.filter({ hasText: filters.name }).filter({ hasText: filters.status });
     console.log('Devices found: ' + await device.count());
     if (await device.count() > 0) {
